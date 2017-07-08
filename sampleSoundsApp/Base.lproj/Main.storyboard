@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="sampleSoundsApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="10g-rC-dN4">
+                                <rect key="frame" x="-0.5" y="183.5" width="375" height="150"/>
+                                <color key="backgroundColor" red="0.96853607892990112" green="0.94038993120193481" blue="0.31877386569976807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="rhX-fe-cL0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                <state key="normal" title="Play"/>
+                                <connections>
+                                    <action selector="play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BSM-90-28T"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jdq-Xk-QDW">
+                                <rect key="frame" x="-0.5" y="333.5" width="375" height="150"/>
+                                <color key="backgroundColor" red="0.75501321359999995" green="1" blue="0.86968278850000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                <state key="normal" title="Stop"/>
+                                <connections>
+                                    <action selector="stop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="S76-eg-XsG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Jdq-Xk-QDW" firstAttribute="height" secondItem="10g-rC-dN4" secondAttribute="height" id="0UX-gg-hKB"/>
+                            <constraint firstItem="10g-rC-dN4" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="12w-r0-daV"/>
+                            <constraint firstItem="Jdq-Xk-QDW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="K0l-mH-hoV"/>
+                            <constraint firstItem="10g-rC-dN4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ThS-3W-Q8Y"/>
+                            <constraint firstItem="Jdq-Xk-QDW" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="elE-PU-Kqu"/>
+                            <constraint firstItem="Jdq-Xk-QDW" firstAttribute="width" secondItem="10g-rC-dN4" secondAttribute="width" id="lPD-Mb-qRv"/>
+                            <constraint firstItem="10g-rC-dN4" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="noI-SF-0za"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
